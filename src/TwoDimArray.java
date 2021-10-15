@@ -47,7 +47,7 @@ public class TwoDimArray {
 			
 			for(int j = 0; j < employees; j++) {
 				
-				System.out.print(plan[i][j] + " ");
+				System.out.print(plan[i][j] + "  ");
 				
 			}
 			System.out.println(" ");

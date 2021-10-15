@@ -25,7 +25,7 @@ public class BaseArray {
 		int max = 19;
 	
 		
-		while(posNum <7) {
+		while(posNum < 9) {
 			
 			posNum = 0;
 		

@@ -17,6 +17,9 @@ public class PastCounter {
 		
 		for(int j = 0; j < employees; j++) {
 			
+			
+			// COUNT PAST WORK DAYS
+			
 			if(plan[i-1][j] == 1) {
 				counterInArray = counterInArray + 1;
 				
@@ -37,12 +40,40 @@ public class PastCounter {
 					}
 					
 				}
+				
+				pastCounter[j] = counterInArray + "A";
+			}
+			
+			//COUNT PAST OFF DAYS
+			
+			if(plan[i-1][j] == 0) {
+				counterInArray = counterInArray + 1;
+				
+				
+				if(plan[i-2][j] == 0) {
+					counterInArray = counterInArray + 1;
+					
+					
+					if(plan[i-3][j] == 0) {
+						counterInArray = counterInArray + 1;
+						
+						if(plan[i-4][j] == 0) {
+							
+							counterInArray = counterInArray + 1;
+							
+						}
+						
+					}
+					
+				}
+				
+				pastCounter[j] = counterInArray + "F";
 			}
 			
 			
-			pastCounter[j] = counterInArray + "A";
 			
-			System.out.print(pastCounter[j]);
+			
+			System.out.print(pastCounter[j] + " ");
 			counterInArray = 0;
 			
 		}
