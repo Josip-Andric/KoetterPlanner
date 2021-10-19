@@ -60,7 +60,7 @@ public class TwoDimArray {
 	public static void fillRestOfMonth() {
 		
 		PastCounter.shiftsCounter();
-		
+		PastCounter.pastCounterSorter();
 		
 		
 		
