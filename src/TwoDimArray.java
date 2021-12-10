@@ -58,12 +58,22 @@ public class TwoDimArray {
 	}
 	
 	public static void fillRestOfMonth() {
-		
+		for(int i = 4; i < daysOfMonth; i++) {
+			
 		PastCounter.shiftsCounter();
+		
 		PastCounter.pastCounterSorter();
 		
+		PastCounter.shifftsAssigner();
 		
+		for (int j = 0; j < employees; j++) {
+				
+				System.out.print(plan[i][j] + "  ");
+			}
+			System.out.println("");
 		
+		}
+		PastCounter.arrayReseter();
 	}
 	
 	

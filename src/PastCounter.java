@@ -7,7 +7,9 @@ public class PastCounter {
 	
 	
 	static String [] pastCounter = new String[employees];
-	static ArrayList<Integer> sortedCounter= new ArrayList<Integer>();
+	static ArrayList<Integer> sortedCounterList= new ArrayList<Integer>();
+	static int [] sortedCounter = new int[employees];
+	
 	static int counterInArray = 0;
 	static int i = 4;
 	
@@ -95,7 +97,7 @@ public class PastCounter {
 			
 			if(pastCounter[i].equals("-4")) {
 				
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 			
 				
 			}
@@ -107,7 +109,7 @@ public class PastCounter {
 			
 			if(pastCounter[i].equals("-3")) {
 				
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 			
 				
 			}
@@ -119,7 +121,7 @@ public class PastCounter {
 			
 			if(pastCounter[i].equals("-2")) {
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 				
 			}
 		}
@@ -129,7 +131,7 @@ public class PastCounter {
 			if(pastCounter[i].equals("-1")) {
 		
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 				
 			}
 		}
@@ -140,7 +142,7 @@ public class PastCounter {
 			if(pastCounter[i].equals(" 1")) {
 		
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 		
 				}
 			}
@@ -152,7 +154,7 @@ public class PastCounter {
 			if(pastCounter[i].equals(" 2")) {
 		
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 		
 				}
 			}
@@ -163,7 +165,7 @@ public class PastCounter {
 			if(pastCounter[i].equals(" 3")) {
 		
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 		
 				}
 			}
@@ -174,19 +176,58 @@ public class PastCounter {
 			if(pastCounter[i].equals(" 4")) {
 		
 
-				sortedCounter.add(i);
+				sortedCounterList.add(i);
 				
 				}
 			}
 		
 		
+		//System.out.println("------------------------");
+		
+		//System.out.print(sortedCounterList);
 		System.out.println("");
 		
-		System.out.print(sortedCounter);
+		for(int i = 0; i < employees ; i++) {
+			
+			sortedCounter[i] = sortedCounterList.get(i);
 		
+		}
+		
+//		for(int i = 0; i < employees ; i++) {
+//			System.out.print(sortedCounter[i] + " ");
+//			
+//		}
 
 	}
 	
+	public static void arrayReseter() {
+		
+		for(int i = 0; i < employees; i++) {
+			
+			sortedCounterList.remove(i);
+			
+			
+		}
+		
+		
+	}
+	
+	public static void shifftsAssigner() {
+		
+		for(int j =0; j < employees; j++) {
+			
+			if(j<9) {
+				plan[i][sortedCounter[j]] = 1;
+			}
+			else {
+				plan[i][sortedCounter[j]] = 0;
+				
+			}
+			
+		}
+		
+		
+	}
 	
 	
 
