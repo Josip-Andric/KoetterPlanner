@@ -62,9 +62,15 @@ public class TwoDimArray {
 			
 		PastCounter.shiftsCounter();
 		
+		// Pregledava dane unazad i zbraja koliko ima smjena odradjenih
+		
 		PastCounter.pastCounterSorter();
 		
+		// sortira listu koju shiftsCounter napravi
+		
 		PastCounter.shifftsAssigner();
+		
+		// prvih 9 u sortiranoj listi dobivaju SMJENU (1)
 		
 		for (int j = 0; j < employees; j++) {
 				
@@ -74,6 +80,8 @@ public class TwoDimArray {
 		
 		}
 		PastCounter.arrayReseter();
+		
+		// resetira listu "sortedCounterList" 
 	}
 	
 	
