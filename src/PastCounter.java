@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class PastCounter {
 	
@@ -77,12 +79,12 @@ public class PastCounter {
 			
 			
 			
-			System.out.print(pastCounter[j] + " ");
+			//System.out.print(pastCounter[j] + " ");
 			counterInArray = 0;
 			
 		}
 		
-		
+	
 		
 		
 	}
@@ -202,12 +204,10 @@ public class PastCounter {
 	
 	public static void arrayReseter() {
 		
-		for(int i = 0; i < employees; i++) {
+		
+			//treba resetirati pastCounter i mozda i sortanu verziju te liste
 			
-			sortedCounterList.remove(i);
-			
-			
-		}
+		
 		
 		
 	}
