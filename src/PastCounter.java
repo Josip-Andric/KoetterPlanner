@@ -184,7 +184,6 @@ public class PastCounter {
 			}
 		
 		
-		//System.out.println("------------------------");
 		
 		//System.out.print(sortedCounterList);
 		System.out.println("");
@@ -202,15 +201,7 @@ public class PastCounter {
 
 	}
 	
-	public static void arrayReseter() {
-		
-		
-			//treba resetirati pastCounter i mozda i sortanu verziju te liste
-			
-		
-		
-		
-	}
+	
 	
 	public static void shifftsAssigner() {
 		
@@ -228,6 +219,16 @@ public class PastCounter {
 		
 		
 	}
+	
+	public static void arrayReseter() {
+		
+		
+		//treba resetirati pastCounter i mozda i sortanu verziju te liste
+		
+	
+	
+	
+}
 	
 	
 

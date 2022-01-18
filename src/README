@@ -1,0 +1,42 @@
+Objasnjena Classa
+
+-PASTCOUNTER.JAVA-
+	-shiftsCounter-
+	
+		-zbraja unazad koliko je smjena ili 
+		slobodnih dana odradjeno
+		
+		-storea ih u "counterInArray" kao int
+		-"counterInArray" se storea u "pastCounter" 
+		Array
+		
+		- *** treba resetirati "pastCounter" *** -
+		
+		
+	-pastCounterSorter-
+	
+		- sortira "pastCounter" od -4 -> 4 tako da 
+		storea njegov index u ArrayListu "sortedCounterList"
+		
+		-zadnja for loop pretvara ArrayList "sortedCounterList"
+		u Array "sortedCounter"
+	
+		
+	- shifftsAssigner-
+	
+		-upisuje u "plan"  "1" tako sto koristi prvih 9 vrijednosti
+		"sortedCounter" array kao index za "plan"
+	
+	
+	
+	-arrayReseter-
+		-ovo ce biti clasa za resetiranje "sortedCounter"
+		
+		
+		
+		
+		
+		
+		
+		
+		
