@@ -225,9 +225,9 @@ public class PastCounter {
 		
 		//treba resetirati pastCounter i mozda i sortanu verziju te liste
 		
-		pastCounter = new String[0];
-		sortedCounter = new int [0];
-		sortedCounterList.clear();
+//		pastCounter = new String[0];
+//		sortedCounter = new int [0];
+//		sortedCounterList.clear();
 		
 	
 	
