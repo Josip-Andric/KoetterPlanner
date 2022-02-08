@@ -76,7 +76,7 @@ public class TwoDimArray {
 				
 				System.out.print(plan[i][j] + "  ");
 			}
-			System.out.println("");
+			//System.out.println("");
 		
 		}
 		PastCounter.arrayReseter();
