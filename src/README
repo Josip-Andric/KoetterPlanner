@@ -33,6 +33,16 @@ Objasnjena Classa
 		-ovo ce biti clasa za resetiranje "sortedCounter"
 		
 		
+--  DEBUGING  --
+
+
+	Funkcija shifftsCounter  koja hvata prijasnje dane ne radi
+	
+	plan[i-1] ne funkcionira
+	
+	potreban drugi nacin dohvacanja prijasnjih koordinata
+		
+		
 		
 		
 		

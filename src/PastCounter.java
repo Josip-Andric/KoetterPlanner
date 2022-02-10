@@ -12,7 +12,7 @@ public class PastCounter {
 	static int [] sortedCounter = new int[employees];
 	
 	static int counterInArray = 0;
-	static int i = 4;
+	static int i = TwoDimArray.reference;
 	
 	
 	
@@ -184,7 +184,7 @@ public class PastCounter {
 		
 		
 		
-//		System.out.print(sortedCounterList);
+		//System.out.print(sortedCounterList);
 		System.out.println("");
 		
 		for(int i = 0; i < employees ; i++) {
@@ -225,9 +225,13 @@ public class PastCounter {
 		
 		//treba resetirati pastCounter i mozda i sortanu verziju te liste
 		
-//		pastCounter = new String[0];
-//		sortedCounter = new int [0];
-//		sortedCounterList.clear();
+		// VALIDNI NACIN RESETIRANJA ARRAYS
+		
+		
+		pastCounter = new String[employees];
+		sortedCounter = new int [employees];
+		sortedCounterList.clear();
+		
 		
 	
 	

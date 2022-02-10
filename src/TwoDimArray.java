@@ -10,6 +10,7 @@ public class TwoDimArray {
 	
 	public static int[][] plan = new int[daysOfMonth][employees];	
 //	public static int[] baseArray = BaseArray.baseArray;
+	public static int reference = 0;
 	
 	public static void fillFirstFourDays() {
 		
@@ -60,8 +61,18 @@ public class TwoDimArray {
 	public static void fillRestOfMonth() {
 		for(int i = 4; i < daysOfMonth; i++) {
 			
+			reference = i;
+			
 		PastCounter.shiftsCounter();
+		for(int j = 0; j < employees; j++) {
+			
+			System.out.print(PastCounter.pastCounter[j]);
+			
+			
+			
+		}
 		
+		System.out.println("");
 		// Pregledava dane unazad i zbraja koliko ima smjena odradjenih
 		
 		PastCounter.pastCounterSorter();
@@ -78,10 +89,12 @@ public class TwoDimArray {
 			}
 			//System.out.println("");
 		
-		}
 		PastCounter.arrayReseter();
 		
 		// resetira listu "sortedCounterList" 
+		
+		}
+		
 	}
 	
 	
