@@ -34,7 +34,8 @@ Objasnjena Classa
 		
 		
 --  DEBUGING  --
-   Ne unosi se dobro zadani brojevi u Plan[][] 
+
+	Methoda shifftsAssigner() ne unosi kako treba zadane brojevi u Plan[][] 
 
 	
 		
