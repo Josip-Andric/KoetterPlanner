@@ -10,6 +10,7 @@ public class PastCounter {
 	static String [] pastCounter = new String[employees];
 	static ArrayList<Integer> sortedCounterList= new ArrayList<Integer>();
 	static int [] sortedCounter = new int[employees];
+	static int [] finishedDayArray = new int [employees];
 	
 	static int counterInArray = 0;
 	static int i = TwoDimArray.reference;
@@ -207,15 +208,38 @@ public class PastCounter {
 		for(int j =0; j < employees; j++) {
 			
 			if(j<9) {
-				plan[i][sortedCounter[j]] = 1;
+				finishedDayArray[sortedCounterList.get(j)] = 1;
 			}
 			else {
-				plan[i][sortedCounter[j]] = 0;
+				finishedDayArray[sortedCounterList.get(j)]  = 0;
 				
 			}
 			
+			
 		}
 		
+		for (int j = 0; j < employees; j++) {
+			
+			System.out.print(finishedDayArray[j]);
+			
+			
+		}
+		for(int j = 0; j < employees; j++) {
+			
+			plan[i][j] = finishedDayArray[j];
+		}
+		
+		
+	}
+	
+	public static void printWantedDay() {
+		
+		System.out.println( "Ovo je zeljeni dan: ");
+		for(int j = 0; j < employees; j++) {
+			
+			System.out.print( plan[7][j]);
+			
+		}
 		
 		
 	}
@@ -230,6 +254,7 @@ public class PastCounter {
 		
 		pastCounter = new String[employees];
 		sortedCounter = new int [employees];
+		finishedDayArray = new int [employees];
 		sortedCounterList.clear();
 		
 		

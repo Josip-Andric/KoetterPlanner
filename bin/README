@@ -34,14 +34,9 @@ Objasnjena Classa
 		
 		
 --  DEBUGING  --
+   Ne unosi se dobro zadani brojevi u Plan[][] 
 
-
-	Funkcija shifftsCounter  koja hvata prijasnje dane ne radi
 	
-	plan[i-1] ne funkcionira
-	
-	potreban drugi nacin dohvacanja prijasnjih koordinata
-		
 		
 		
 		

@@ -12,6 +12,9 @@ public class Main {
 		
 		TwoDimArray.fillRestOfMonth();
 		
+		PastCounter.printWantedDay();
+
+		
 		
 	}
 

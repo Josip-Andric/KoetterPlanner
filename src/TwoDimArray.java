@@ -2,7 +2,7 @@
 
 public class TwoDimArray {
 	
-	static int daysOfMonth = 30;
+	static int daysOfMonth = 10;
 	static int employees = 20;
 	
 	
@@ -64,15 +64,7 @@ public class TwoDimArray {
 			reference = i;
 			
 		PastCounter.shiftsCounter();
-		for(int j = 0; j < employees; j++) {
-			
-			System.out.print(PastCounter.pastCounter[j]);
-			
-			
-			
-		}
 		
-		System.out.println("");
 		// Pregledava dane unazad i zbraja koliko ima smjena odradjenih
 		
 		PastCounter.pastCounterSorter();
