@@ -218,12 +218,12 @@ public class PastCounter {
 			
 		}
 		
-		for (int j = 0; j < employees; j++) {
-			
-			System.out.print(finishedDayArray[j]);
-			
-			
-		}
+//		for (int j = 0; j < employees; j++) {
+//			
+//			System.out.print(finishedDayArray[j]);
+//			
+//			
+//		}
 		for(int j = 0; j < employees; j++) {
 			
 			plan[i][j] = finishedDayArray[j];
