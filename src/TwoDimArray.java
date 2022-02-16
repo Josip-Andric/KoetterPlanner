@@ -9,7 +9,7 @@ public class TwoDimArray {
 	
 	
 	public static int[][] plan = new int[daysOfMonth][employees];	
-//	public static int[] baseArray = BaseArray.baseArray;
+
 	public static int reference = 0;
 	
 	public static void fillFirstFourDays() {
@@ -51,7 +51,8 @@ public class TwoDimArray {
 				System.out.print(plan[i][j] + "  ");
 				
 			}
-			System.out.println(" ");
+			if(i< 3) {
+			System.out.println(" ");}
 			
 		}
 		
@@ -79,7 +80,7 @@ public class TwoDimArray {
 				
 				System.out.print(plan[i][j] + "  ");
 			}
-			//System.out.println("");
+			
 		
 		PastCounter.arrayReseter();
 		

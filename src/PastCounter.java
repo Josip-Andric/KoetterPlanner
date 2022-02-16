@@ -81,7 +81,7 @@ public class PastCounter {
 			
 			
 			
-			//System.out.print(pastCounter[j] + " ");
+			
 			counterInArray = 0;
 			
 		}
@@ -187,7 +187,6 @@ public class PastCounter {
 		
 		
 		
-		//System.out.print(sortedCounterList);
 		
 		
 		for(int i = 0; i < employees ; i++) {
@@ -196,10 +195,6 @@ public class PastCounter {
 		
 		}
 		
-//		for(int i = 0; i < employees ; i++) {
-//			System.out.print(sortedCounter[i] + " ");
-//			
-//		}
 
 	}
 	
@@ -220,17 +215,11 @@ public class PastCounter {
 			
 		}
 		
-//		for (int j = 0; j < employees; j++) {
-//			
-//			System.out.print(finishedDayArray[j]);
-//			
-//			
-//		}
-		
+
 		
 		for(int j = 0; j < employees; j++) {
 			
-//			
+			
 			
 			plan[TwoDimArray.reference][j] = finishedDayArray[j];
 		}
@@ -238,17 +227,7 @@ public class PastCounter {
 		
 	}
 	
-	public static void printWantedDay() {
-		
-		System.out.println( "Ovo je zeljeni dan: ");
-		for(int j = 0; j < employees; j++) {
-			
-			System.out.print( plan[7][j]);
-			
-		}
-		
-		
-	}
+	
 	
 	public static void arrayReseter() {
 		

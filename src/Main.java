@@ -2,7 +2,7 @@
 public class Main {
 	public static void main(String[] args) {
 		
-		//TwoDimensionalArrayOld.generate();
+		
 		
 		TwoDimArray.fillFirstFourDays();
 		
@@ -12,7 +12,7 @@ public class Main {
 		
 		TwoDimArray.fillRestOfMonth();
 		
-	//	PastCounter.printWantedDay();
+	
 
 		
 		

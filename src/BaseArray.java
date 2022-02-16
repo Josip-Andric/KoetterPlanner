@@ -30,7 +30,7 @@ public class BaseArray {
 			posNum = 0;
 		
 		 randomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
-	    // System.out.println(randomInt);
+	   
 		
 		if(baseArray[randomInt] == 0) {
 			
