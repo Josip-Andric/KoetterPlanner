@@ -2,7 +2,7 @@
 
 public class TwoDimArray {
 	
-	static int daysOfMonth = 10;
+	static int daysOfMonth = 30;
 	static int employees = 20;
 	
 	

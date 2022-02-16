@@ -35,7 +35,10 @@ Objasnjena Classa
 		
 --  DEBUGING  --
 
-	Methoda shifftsAssigner() ne unosi kako treba zadane brojevi u Plan[][] 
+	Methoda shifftsAssigner() ne unosi kako treba zadane brojevi u Plan[][]
+	
+	shiftsCounter() vidi plan[i-1][j] kao dobru koordinatu ali uzima brojku 
+	iz krivog koordinata  
 
 	
 		

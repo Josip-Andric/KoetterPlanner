@@ -13,7 +13,7 @@ public class PastCounter {
 	static int [] finishedDayArray = new int [employees];
 	
 	static int counterInArray = 0;
-	static int i = TwoDimArray.reference;
+	
 	
 	
 	
@@ -25,19 +25,21 @@ public class PastCounter {
 			
 			
 			// COUNT PAST WORK DAYS
+		
 			
-			if(plan[i-1][j] == 1) {
+			
+			if(plan[TwoDimArray.reference-1][j] == 1) {
 				counterInArray = counterInArray + 1;
 				
 				
-				if(plan[i-2][j] == 1) {
+				if(plan[TwoDimArray.reference-2][j] == 1) {
 					counterInArray = counterInArray + 1;
 					
 					
-					if(plan[i-3][j] == 1) {
+					if(plan[TwoDimArray.reference-3][j] == 1) {
 						counterInArray = counterInArray + 1;
 						
-						if(plan[i-4][j] == 1) {
+						if(plan[TwoDimArray.reference-4][j] == 1) {
 							
 							counterInArray = counterInArray + 1;
 							
@@ -52,18 +54,18 @@ public class PastCounter {
 			
 			//COUNT PAST OFF DAYS
 			
-			if(plan[i-1][j] == 0) {
+			if(plan[TwoDimArray.reference-1][j] == 0) {
 				counterInArray = counterInArray - 1;
 				
 				
-				if(plan[i-2][j] == 0) {
+				if(plan[TwoDimArray.reference-2][j] == 0) {
 					counterInArray = counterInArray - 1;
 					
 					
-					if(plan[i-3][j] == 0) {
+					if(plan[TwoDimArray.reference-3][j] == 0) {
 						counterInArray = counterInArray - 1;
 						
-						if(plan[i-4][j] == 0) {
+						if(plan[TwoDimArray.reference-4][j] == 0) {
 							
 							counterInArray = counterInArray - 1;
 							
@@ -186,7 +188,7 @@ public class PastCounter {
 		
 		
 		//System.out.print(sortedCounterList);
-		System.out.println("");
+		
 		
 		for(int i = 0; i < employees ; i++) {
 			
@@ -224,11 +226,15 @@ public class PastCounter {
 //			
 //			
 //		}
+		
+		
 		for(int j = 0; j < employees; j++) {
 			
-			plan[i][j] = finishedDayArray[j];
+//			
+			
+			plan[TwoDimArray.reference][j] = finishedDayArray[j];
 		}
-		
+		System.out.println(" ");
 		
 	}
 	
