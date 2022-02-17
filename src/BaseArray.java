@@ -9,9 +9,13 @@ public class BaseArray {
 	
 	public static int randomInt = 0;
 	
+	public static int employees = TwoDimArray.employees;
+	
+	
+	
 	public static void fill() {
 		
-		for (int j = 0; j < 20; j++) {
+		for (int j = 0; j < employees; j++) {
 			
 			baseArray[j] = 0;
 			
@@ -22,7 +26,7 @@ public class BaseArray {
 	
 	public static void randomize() {
 		int min = 0;
-		int max = 19;
+		int max = employees - 1;
 	
 		
 		while(posNum < 9) {
@@ -38,7 +42,7 @@ public class BaseArray {
 		}
 		
 		
-		for(int k = 0; k < 20; k++) {
+		for(int k = 0; k < employees; k++) {
 			
 			if(baseArray[k] == 1) {
 				posNum ++;
@@ -54,7 +58,7 @@ public class BaseArray {
 	}
 	public static void resetBaseArray(){
 		
-			for (int j = 0; j < 20; j++) {
+			for (int j = 0; j < employees; j++) {
 			
 				baseArray[j] = 0;
 		
@@ -64,7 +68,7 @@ public class BaseArray {
 	}
 
 	public static void print() {
-		for (int j = 0; j < 20; j++) {
+		for (int j = 0; j < employees; j++) {
 		
 		System.out.print(baseArray[j]);
 		
