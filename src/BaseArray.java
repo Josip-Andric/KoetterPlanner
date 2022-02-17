@@ -3,13 +3,17 @@ public class BaseArray {
 	
 	public static int[][] plan = TwoDimArray.plan;
 	
-	public static int[] baseArray = new int[20];
+	public static int employees = TwoDimArray.employees;
 	
-	public static int posNum = 0; 
+	public static int[] baseArray = new int[employees];
+	
+	public static int posNum; 
+	
+	public static int wantedPos = 9;
 	
 	public static int randomInt = 0;
 	
-	public static int employees = TwoDimArray.employees;
+	
 	
 	
 	
@@ -29,7 +33,7 @@ public class BaseArray {
 		int max = employees - 1;
 	
 		
-		while(posNum < 9) {
+		while(posNum < wantedPos) {
 			
 			posNum = 0;
 		
