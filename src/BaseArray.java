@@ -13,9 +13,25 @@ public class BaseArray {
 	
 	public static int randomInt = 0;
 	
+	public static int[] january = Database.january;
 	
 	
 	
+	public static void determineWeekend() {
+		
+		for(int i = 0; i < january.length; i++) {
+			
+		//	System.out.print(january[i]);
+			
+			if(january[i] != 0) {
+				wantedPos = 3;
+			}
+			else {
+				wantedPos = 9;
+			}
+		}
+		
+	}
 	
 	public static void fill() {
 		
@@ -78,5 +94,7 @@ public class BaseArray {
 		
 		}
 	}
+
+	
 
 }

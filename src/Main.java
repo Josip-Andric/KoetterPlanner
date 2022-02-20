@@ -3,6 +3,8 @@ import java.io.IOException;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
+		//TwoDimArray.determineWeekend();
+		
 		
 		
 		TwoDimArray.fillFirstFourDays();
@@ -12,6 +14,8 @@ public class Main {
 		//TwoDimArray.printFourDaysArray();
 		
 		TwoDimArray.fillRestOfMonth();
+		
+		
 		
 		PlanRotation.rotate();
 		
