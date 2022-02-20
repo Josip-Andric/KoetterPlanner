@@ -6,7 +6,7 @@ public class ExportCsv {
 	static int[][] plan = TwoDimArray.plan;
 	static int employees = TwoDimArray.employees;
 	static int daysOfMonth = TwoDimArray.daysOfMonth;
-	static char a = 'a';
+
 	
 	
 	
@@ -19,11 +19,6 @@ public class ExportCsv {
 			 
 			 for(int j = 0; j < employees; j++) {
 				
-				 
-				 		 
-		
-		 
-		 	
 			 
 			 writer.append(plan[i][j] + "");
 			 writer.append(";");
@@ -44,15 +39,6 @@ public class ExportCsv {
 			 
 			 System.out.println("Successfully wrote to the file.");
 			 
-			 
-			 
-			 
-		
-
-		 
-		
-	
-		 
 	}
 
 }

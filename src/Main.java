@@ -13,11 +13,16 @@ public class Main {
 		
 		TwoDimArray.fillRestOfMonth();
 		
+		PlanRotation.rotate();
+		
 		HoursCounter.counter();
 		
 		//PrintPlan.print();
+		PrintRotatedPlan.print();
 		
 		//ExportCsv.run();
+		
+		
 	
 
 		
