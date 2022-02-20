@@ -1,6 +1,7 @@
+import java.io.IOException;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		
 		
@@ -8,10 +9,15 @@ public class Main {
 		
 		
 		
-		TwoDimArray.printFourDaysArray();
+		//TwoDimArray.printFourDaysArray();
 		
 		TwoDimArray.fillRestOfMonth();
 		
+		HoursCounter.counter();
+		
+		//PrintPlan.print();
+		
+		//ExportCsv.run();
 	
 
 		

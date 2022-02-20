@@ -74,7 +74,7 @@ public class BaseArray {
 	public static void print() {
 		for (int j = 0; j < employees; j++) {
 		
-		System.out.print(baseArray[j]);
+		//System.out.print(baseArray[j]);
 		
 		}
 	}

@@ -223,7 +223,7 @@ public class PastCounter {
 			
 			plan[TwoDimArray.reference][j] = finishedDayArray[j];
 		}
-		System.out.println(" ");
+		//System.out.println(" ");
 		
 	}
 	

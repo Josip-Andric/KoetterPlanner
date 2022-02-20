@@ -2,6 +2,7 @@
 
 public class TwoDimArray {
 	
+	
 	static int daysOfMonth = 30;
 	static int employees = 20;
 	
@@ -48,11 +49,13 @@ public class TwoDimArray {
 			
 			for(int j = 0; j < employees; j++) {
 				
-				System.out.print(plan[i][j] + "  ");
+				//System.out.print(plan[i][j] + "   ");
 				
 			}
 			if(i< 3) {
-			System.out.println(" ");}
+			//System.out.println(" ");
+			
+			}
 			
 		}
 		
@@ -76,11 +79,11 @@ public class TwoDimArray {
 		
 		// prvih 9 u sortiranoj listi dobivaju SMJENU (1)
 		
-		for (int j = 0; j < employees; j++) {
-				
-				System.out.print(plan[i][j] + "  ");
-			}
-			
+//		for (int j = 0; j < employees; j++) {
+//				
+//				System.out.print(plan[i][j] + "   ");
+//			}
+//			
 		
 		PastCounter.arrayReseter();
 		
