@@ -6,7 +6,7 @@ public class PastCounter {
 	static int employees = TwoDimArray.employees;
 	static int[][] plan = TwoDimArray.plan;
 	
-	static int posibleShiffts = BaseArray.wantedPos;
+
 	
 	
 	static String [] pastCounter = new String[employees];
@@ -206,7 +206,7 @@ public class PastCounter {
 		
 		for(int j =0; j < employees; j++) {
 			
-			if(j<posibleShiffts) {
+			if(j<BaseArray.wantedPos) {
 				finishedDayArray[sortedCounterList.get(j)] = 1;
 			}
 			else {

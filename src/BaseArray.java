@@ -9,7 +9,7 @@ public class BaseArray {
 	
 	public static int posNum; 
 	
-	public static int wantedPos = 9;
+	public static int wantedPos;
 	
 	public static int randomInt = 0;
 	
@@ -17,21 +17,6 @@ public class BaseArray {
 	
 	
 	
-	public static void determineWeekend() {
-		
-		for(int i = 0; i < january.length; i++) {
-			
-		//	System.out.print(january[i]);
-			
-			if(january[i] != 0) {
-				wantedPos = 3;
-			}
-			else {
-				wantedPos = 9;
-			}
-		}
-		
-	}
 	
 	public static void fill() {
 		

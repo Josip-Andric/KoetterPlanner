@@ -15,12 +15,20 @@ public class TwoDimArray {
 
 	public static int reference = 0;
 	
+	
+	
 	public static void fillFirstFourDays() {
 		
 		
 	
 		for(int i = 0; i< 4; i++) {
 			
+			if(january[i] == 1) {
+				BaseArray.wantedPos = 3;
+			} 
+			else {
+				BaseArray.wantedPos = 9;
+			}
 			
 			BaseArray.randomize();
 			
@@ -66,6 +74,15 @@ public class TwoDimArray {
 	
 	public static void fillRestOfMonth() {
 		for(int i = 4; i < daysOfMonth; i++) {
+			
+			
+			if(january[i] == 1) {
+				BaseArray.wantedPos = 3;
+			} 
+			else {
+				BaseArray.wantedPos = 9;
+			}
+			
 			
 			reference = i;
 			
