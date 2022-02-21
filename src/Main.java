@@ -3,19 +3,16 @@ import java.io.IOException;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
-		//TwoDimArray.determineWeekend();
-		
-		
 		
 		TwoDimArray.fillFirstFourDays();
-		
-		
 		
 		//TwoDimArray.printFourDaysArray();
 		
 		TwoDimArray.fillRestOfMonth();
 		
+		NightShiffts.add();
 		
+		Warenannahme.add();
 		
 		PlanRotation.rotate();
 		
