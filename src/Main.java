@@ -10,7 +10,7 @@ public class Main {
 		
 		TwoDimArray.fillRestOfMonth();
 		
-		NightShiffts.add();
+		
 		
 		Warenannahme.add();
 		

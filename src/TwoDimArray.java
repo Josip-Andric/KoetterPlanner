@@ -103,7 +103,7 @@ public class TwoDimArray {
 //				
 //				System.out.print(plan[i][j] + "   ");
 //			}
-//			
+		NightShifts.add();	
 		
 		PastCounter.arrayReseter();
 		
