@@ -69,11 +69,7 @@ public class BaseArray {
 		int max = 0;
 		int min = 0;
 		
-		for (int j = 0; j < employees; j++) {
-			
-			System.out.print(baseArray[j]);
-			
-			}
+		
 		
 		for(int j = 0; j < employees; j++) {
 			

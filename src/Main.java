@@ -6,7 +6,7 @@ public class Main {
 		
 		TwoDimArray.fillFirstFourDays();
 		
-		TwoDimArray.printFourDaysArray();
+		
 		
 		TwoDimArray.fillRestOfMonth();
 		

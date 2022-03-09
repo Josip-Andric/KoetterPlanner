@@ -26,7 +26,7 @@ public class TwoDimArray {
 				BaseArray.wantedPos = 3;
 			} 
 			else {
-				BaseArray.wantedPos = 7;
+				BaseArray.wantedPos = 9;
 			}
 			
 			BaseArray.randomize();
@@ -56,24 +56,6 @@ public class TwoDimArray {
 		
 	
 	
-	public static void printFourDaysArray() {
-		
-		for(int i = 0; i < 4; i++) {
-			
-			for(int j = 0; j < employees; j++) {
-				
-				//System.out.print(plan[i][j] + "   ");
-				
-			}
-			if(i< 3) {
-			//System.out.println(" ");
-			
-			}
-			
-		}
-		
-		
-	}
 	
 	public static void fillRestOfMonth() {
 		for(int i = 4; i < daysOfMonth; i++) {
@@ -83,7 +65,7 @@ public class TwoDimArray {
 				BaseArray.wantedPos = 3;
 			} 
 			else {
-				BaseArray.wantedPos = 7;
+				BaseArray.wantedPos = 9;
 			}
 			
 			
