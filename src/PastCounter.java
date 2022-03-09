@@ -225,7 +225,7 @@ public class PastCounter {
 			
 			plan[TwoDimArray.reference][j] = finishedDayArray[j];
 		}
-		//System.out.println(" ");
+		
 		
 	}
 	
@@ -234,9 +234,7 @@ public class PastCounter {
 	public static void arrayReseter() {
 		
 		
-		//treba resetirati pastCounter i mozda i sortanu verziju te liste
 		
-		// VALIDNI NACIN RESETIRANJA ARRAYS
 		
 		
 		pastCounter = new String[employees];

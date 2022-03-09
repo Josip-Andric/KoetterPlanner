@@ -125,10 +125,7 @@ public class BaseArray {
 		
 	}
 
-	public static void print() {
-		
-	}
-
+	
 	
 
 }
