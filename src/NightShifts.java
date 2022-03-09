@@ -8,12 +8,14 @@ public class NightShifts {
 	
 	static ArrayList<Integer> freePeopleIndex= new ArrayList<Integer>();
 
+
 	
 
 	public static void add() {
-		int max = freePeopleIndex.size() - 1;
+		int max = 0;
 		int min = 0;
-		int nPos = 2;
+		
+		
 		
 		for(int j = 0; j < employees; j++) {
 			
@@ -22,18 +24,41 @@ public class NightShifts {
 				
 			}
 			
+			
 		}
-		 while(freePeopleIndex.size() > nPos) {
-		int randomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
 		
-			freePeopleIndex.remove(randomInt);		
-		 }
-		 
-		 for(int j = 0; j< freePeopleIndex.size(); j++) {
+	
+		
+	// HARDCODED PART, NOT PROUD, Shoud be a loop but it keeps breaking
+		
+		max = freePeopleIndex.size() -1;
+		
+		int randomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
 			 
-			 plan[TwoDimArray.reference][freePeopleIndex.get(j)] = 0;
+			 plan[TwoDimArray.reference][freePeopleIndex.get(randomInt)] = 2;
+			 
+			 
+			 
+		int	secondRandomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+			 
+			 if( secondRandomInt != randomInt) {
+				 
+				 plan[TwoDimArray.reference][freePeopleIndex.get(secondRandomInt)] = 2;
+				 
+			 }
+			 else {
+				 secondRandomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+				 plan[TwoDimArray.reference][freePeopleIndex.get(secondRandomInt)] = 2;
+				 
+				 
+			 }
+			 
+			 
+			
+			
 		 
-	}
+	
+		
 
 }
 }

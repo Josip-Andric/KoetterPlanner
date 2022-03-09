@@ -6,17 +6,17 @@ public class Main {
 		
 		TwoDimArray.fillFirstFourDays();
 		
-		//TwoDimArray.printFourDaysArray();
+		TwoDimArray.printFourDaysArray();
 		
 		TwoDimArray.fillRestOfMonth();
 		
 		
 		
-		Warenannahme.add();
+		//Warenannahme.add();
 		
 		PlanRotation.rotate();
 		
-		HoursCounter.counter();
+		//HoursCounter.counter();
 		
 		//PrintPlan.print();
 		PrintRotatedPlan.print();

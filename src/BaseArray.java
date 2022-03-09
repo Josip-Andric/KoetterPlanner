@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class BaseArray {
 	
@@ -14,6 +15,8 @@ public class BaseArray {
 	public static int randomInt = 0;
 	
 	public static int[] january = Database.january;
+	
+	static ArrayList<Integer> freePeopleIndex= new ArrayList<Integer>();
 	
 	
 	
@@ -61,6 +64,55 @@ public class BaseArray {
 		}
 		
 	}
+	
+	public static void nightShiftsAssign() {
+		int max = 0;
+		int min = 0;
+		
+		for (int j = 0; j < employees; j++) {
+			
+			System.out.print(baseArray[j]);
+			
+			}
+		
+		for(int j = 0; j < employees; j++) {
+			
+			if(baseArray[j] == 0) {
+				freePeopleIndex.add(j);
+				
+			}
+			
+			
+		}
+		
+		max = freePeopleIndex.size() -1;
+		
+		int randomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+			 
+			 baseArray[freePeopleIndex.get(randomInt)] = 2;
+			 
+			 
+			 
+		int	secondRandomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+			 
+			 if( secondRandomInt != randomInt) {
+				 
+				 baseArray[freePeopleIndex.get(secondRandomInt)] = 2;
+				 
+			 }
+			 else {
+				 secondRandomInt = (int)Math.floor(Math.random()*(max-min+1)+min);
+				 baseArray[freePeopleIndex.get(secondRandomInt)] = 2;				 
+				 
+			 }
+			 
+			 
+			
+		 
+		
+		
+		
+	}
 	public static void resetBaseArray(){
 		
 			for (int j = 0; j < employees; j++) {
@@ -68,16 +120,13 @@ public class BaseArray {
 				baseArray[j] = 0;
 		
 			}
+			freePeopleIndex.clear();
 		
 		
 	}
 
 	public static void print() {
-		for (int j = 0; j < employees; j++) {
 		
-		//System.out.print(baseArray[j]);
-		
-		}
 	}
 
 	

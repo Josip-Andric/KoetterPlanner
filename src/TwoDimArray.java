@@ -30,6 +30,10 @@ public class TwoDimArray {
 			}
 			
 			BaseArray.randomize();
+			BaseArray.nightShiftsAssign();
+			
+			
+			
 			
 
 			

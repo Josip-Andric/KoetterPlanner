@@ -30,18 +30,18 @@ public class PastCounter {
 		
 			
 			
-			if(plan[TwoDimArray.reference-1][j] == 1) {
+			if(plan[TwoDimArray.reference-1][j] == 1 || plan[TwoDimArray.reference-1][j] == 2) {
 				counterInArray = counterInArray + 1;
 				
 				
-				if(plan[TwoDimArray.reference-2][j] == 1) {
+				if(plan[TwoDimArray.reference-1][j] == 1 || plan[TwoDimArray.reference-1][j] == 2) {
 					counterInArray = counterInArray + 1;
 					
 					
-					if(plan[TwoDimArray.reference-3][j] == 1) {
+					if(plan[TwoDimArray.reference-1][j] == 1 || plan[TwoDimArray.reference-1][j] == 2) {
 						counterInArray = counterInArray + 1;
 						
-						if(plan[TwoDimArray.reference-4][j] == 1) {
+						if(plan[TwoDimArray.reference-1][j] == 1 || plan[TwoDimArray.reference-1][j] == 2) {
 							
 							counterInArray = counterInArray + 1;
 							
@@ -243,7 +243,7 @@ public class PastCounter {
 		sortedCounter = new int [employees];
 		finishedDayArray = new int [employees];
 		sortedCounterList.clear();
-		
+		NightShifts.freePeopleIndex.clear();
 		
 	
 	

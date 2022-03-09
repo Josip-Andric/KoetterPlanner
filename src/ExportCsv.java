@@ -7,7 +7,7 @@ public class ExportCsv {
 	static int employees = TwoDimArray.employees;
 	static int daysOfMonth = TwoDimArray.daysOfMonth;
 
-	
+	static int [][]rotatedPlan = PlanRotation.rotatedPlan;
 	
 	
 	public static void run() throws IOException{
@@ -15,12 +15,12 @@ public class ExportCsv {
 		
 		 FileWriter writer = new FileWriter("/Users/josipandric/Desktop/CSV Test/TestCsv.txt");
 
-		for(int i = 0; i < daysOfMonth; i++) {
+		for(int i = 0; i < employees; i++) {
 			 
-			 for(int j = 0; j < employees; j++) {
+			 for(int j = 0; j < daysOfMonth; j++) {
 				
 			 
-			 writer.append(plan[i][j] + "");
+			 writer.append(rotatedPlan[i][j] + "");
 			 writer.append(";");
 			 
 			 }

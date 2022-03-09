@@ -35,11 +35,8 @@ Objasnjena Classa
 		
 --  DEBUGING  --
 
-	Methoda shifftsAssigner() ne unosi kako treba zadane brojevi u Plan[][]
-	
-	shiftsCounter() vidi plan[i-1][j] kao dobru koordinatu ali uzima brojku 
-	iz krivog koordinata  
-
+	kako bih uveo oznake za nocne "2" moram u PastCounter.shiftsCounter()
+	dodati da gleda i 2 kao validna smjena :D
 	
 		
 		
