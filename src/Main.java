@@ -3,6 +3,8 @@ import java.io.IOException;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
+               
+		
 		
 		TwoDimArray.fillFirstFourDays();
 		
@@ -14,7 +16,7 @@ public class Main {
 		
 		
 		
-		PlanRotation.rotate();
+        PlanRotation.rotate();
 		
 		//HoursCounter.counter();
 		
@@ -23,6 +25,7 @@ public class Main {
 		
 		//ExportCsv.run();
 		
+		GUI.generateGui();
 		
 	
 
