@@ -120,20 +120,7 @@ public class Translator {
 	
 	
 	
-	public static void translateNightShifts() {
-		
-		for(int i = 0; i < employees; i++) {
-			for(int j = 0; j < daysOfMonth; j++) {
-			
-			
-				
-				
-			}
-			
-		}
-			
-		
-		}
+	
 		
 	
 		
