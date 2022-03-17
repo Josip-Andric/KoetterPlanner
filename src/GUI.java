@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,10 +14,11 @@ public class GUI {
 	
 	public static int employees = TwoDimArray.employees;
 	public static int daysOfMonth = TwoDimArray.daysOfMonth;
-	public static int[][] rotatedPlan = PlanRotation.rotatedPlan;
+	
+	public static String[][] translatedPlan = Translator.stringPlan;
 	
 	
-	static JFrame frame = new JFrame("example");
+	static JFrame frame = new JFrame("Koetter Planer");
 	
 	static JPanel panel1 = new JPanel();
 	
@@ -41,7 +43,7 @@ public class GUI {
 		for(int i = 0; i < employees; i++) {
 			for(int j = 0; j < daysOfMonth; j++) {
 				
-				data[i][j] = rotatedPlan[i][j];
+				data[i][j] = Translator.stringPlan[i][j];
 				
 				
 				
@@ -51,6 +53,8 @@ public class GUI {
 			
 		}
 	    
+		
+	table = new JTable(data, columnNames);
 	    
 		
 	//CONSTRUCT STUFF
@@ -60,18 +64,16 @@ public class GUI {
 	JButton button2 = new JButton("Export");
 	
 	
+	button1.addActionListener(new Action());
 	
 	
-	
-	table = new JTable(data, columnNames);
 	
 	
 	
 	
 	
 	//ADD STUFF TO FRAME
-	
-	panel1.add(table, BorderLayout.CENTER);
+	panel1.add(table);
 	panel2.add(button1);
 	panel2.add(button2);
 	frame.add(panel1);
@@ -84,9 +86,9 @@ public class GUI {
 	
 	//LOOKS
 	
-	frame.setSize(1400,800);
+	frame.setSize(1600,800);
 	panel1.setLayout(null);
-	panel1.setBounds(20, 10, 1370, 700);
+	panel1.setBounds(10, 10, 1400, 690);
 	
 	panel2.setLayout(null);
 	panel2.setBounds(20, 700, 1370, 700);
@@ -95,13 +97,17 @@ public class GUI {
 	button1.setBounds(1250,730,100,20);
 	button2.setBounds(50,730,100,20);
 	
-	table.setBounds(20, 10, 1370, 700);
-	table.setFont(new Font("Helvetica", Font.CENTER_BASELINE, 20));
+	table.setBounds(10, 10, 1390, 690);
+	
+	
+	
+	table.setFont(new Font("Helvetica", Font.LAYOUT_LEFT_TO_RIGHT, 10));
 	table.setRowHeight(table.getRowHeight() + 18);
+	table.setGridColor(Color.black);
 	
 	
 	
-	button1.addActionListener(new Action());
+	
 	
 	
 	
@@ -132,7 +138,7 @@ public class GUI {
 		for(int i = 0; i < employees; i++) {
 			for(int j = 0; j <daysOfMonth; j++) {
 				
-				data[i][j] = rotatedPlan[i][j];
+				data[i][j] = Translator.stringPlan[i][j];
 				
 				
 				
@@ -148,7 +154,7 @@ public class GUI {
 		
 		
 		panel1.setLayout(null);
-		panel1.setBounds(20, 10, 1370, 700);
+		panel1.setBounds(10, 10, 1400, 690);
 
 		
 		
@@ -156,9 +162,9 @@ public class GUI {
 		
 		table.setRowHeight(34);
 		
-		table.setBounds(20, 10, 1370, 700);
-		table.setFont(new Font("Helvetica", Font.CENTER_BASELINE, 20));
-		
+		table.setBounds(10, 10, 1390, 690);
+		table.setFont(new Font("Helvetica", Font.LAYOUT_LEFT_TO_RIGHT, 10));
+		table.setGridColor(Color.black);
 		
 		
 		
@@ -175,7 +181,7 @@ class Action implements ActionListener{
 
 	public static int employees = TwoDimArray.employees;
 	public static int daysOfMonth = TwoDimArray.daysOfMonth;
-	public static int[][] rotatedPlan = PlanRotation.rotatedPlan;
+	public static String [][] translatedPlan = Translator.stringPlan;
 	
 
 	
@@ -190,7 +196,11 @@ class Action implements ActionListener{
 		
 		PlanRotation.rotate();
         
-        PrintRotatedPlan.print();
+        //PrintRotatedPlan.print();
+		
+		Translator.translateToString();
+		
+		Translator.translateDaysShifts();
         
         GUI.generateTable();
         

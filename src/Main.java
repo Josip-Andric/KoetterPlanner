@@ -21,11 +21,20 @@ public class Main {
 		//HoursCounter.counter();
 		
 		//PrintPlan.print();
-		PrintRotatedPlan.print();
+		//PrintRotatedPlan.print();
 		
 		//ExportCsv.run();
 		
+		
+		
+		Translator.translateToString();
+		
+		Translator.translateDaysShifts();
+		
 		GUI.generateGui();
+
+		
+		
 		
 	
 
