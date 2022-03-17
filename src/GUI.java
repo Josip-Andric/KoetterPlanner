@@ -61,7 +61,7 @@ public class GUI {
 	
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	JButton button1 = new JButton("Generate");
-	JButton button2 = new JButton("Export");
+	
 	
 	
 	button1.addActionListener(new Action());
@@ -75,7 +75,7 @@ public class GUI {
 	//ADD STUFF TO FRAME
 	panel1.add(table);
 	panel2.add(button1);
-	panel2.add(button2);
+	
 	frame.add(panel1);
 	frame.add(panel2);
 	
@@ -95,7 +95,7 @@ public class GUI {
 	
 
 	button1.setBounds(1250,730,100,20);
-	button2.setBounds(50,730,100,20);
+	
 	
 	table.setBounds(10, 10, 1390, 690);
 	
